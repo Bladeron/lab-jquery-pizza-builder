@@ -30,7 +30,7 @@ $(".btn-pepperonni").click(function () {
 })
 
 $(".btn-sauce").click(function () {
-  if ($(".crust .sauce").hasClass("sauce-white")) {
+  if ($(this).hasClass("active")) {
     $(".crust .sauce").removeClass("sauce-white");
     $(this).removeClass("active")
   } else {
